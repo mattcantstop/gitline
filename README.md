@@ -30,7 +30,9 @@ mentioned. These are the ways to call either:
 *Note: The "Assigned" type takes a third parameted (label_name) whereas
 the "Mentioned" type does not*
 
-This will dump out JSON into the terminal. Here you can quickly scan
+This will dump out JSON into the terminal. Check [this
+link](https://developer.github.com/v3/issues/) for sample output of an
+issue. Here you can quickly scan
 through issues to see where you should spend your time first.
 
 For instance, if I wanted to get a detailed view of what issues were
