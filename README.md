@@ -1,7 +1,7 @@
 ## What Needs My Attention?
 
 A simple script that goes and fetches issues to which you are assigned
-or in which you have mentioned. As these are the two things (for me)
+or in which you have been mentioned. As these are the two things (for me)
 that need immediate attention I thought it would be helpful to have them
 as a command line option.  
 
@@ -12,7 +12,7 @@ another GitHub user. The username value can be any valid username.
 
 Most days I start my day on the command line and not in a GUI GitHub
 tool nor on GitHub.com. This script lets me search for things that need
-my attention where I usually am instead of having to go to do a
+my attention where I usually am instead of having to use a
 different tool to check things. 
 
 #### Getting Started:
@@ -27,13 +27,14 @@ mentioned. These are the ways to call either:
 **Where You Are Assigned (based on label type):**  
 `sh execute.sh assigned username label_name`
 
-*Note: The "Assigned" type takes a third parameted (label_name) whereas
+*Note: The "Assigned" type takes a third parameter (label_name) whereas
 the "Mentioned" type does not*
 
-This will dump out JSON into the terminal. Check [this
-link](https://developer.github.com/v3/issues/) for sample output of an
-issue. Here you can quickly scan
-through issues to see where you should spend your time first.
+This will dump out JSON into the terminal. [This
+link](https://developer.github.com/v3/issues/) shows sample output of an
+issue. You can quickly scan
+through issues to see where you should spend your time first after it
+dumps to the console.
 
 For instance, if I wanted to get a detailed view of what issues were
 assigned to me with the label of bug I could add this line to my `.bash_profile`:  
