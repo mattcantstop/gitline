@@ -16,5 +16,10 @@ function fetchIssuesWhereIAmMentioned {
 }
 
 # Determining Which Method To Call Based On Command Line Arguments
-if [ $whichMethod == "assigned"  ]; then fetchIssuesWhereIAmAssignedWithLabel; fi
-if [ $whichMethod == "mentioned" ]; then fetchIssuesWhereIAmMentioned;         fi
+if [ $whichMethod == "assigned"  ]
+  then fetchIssuesWhereIAmAssignedWithLabel
+elif [ $whichMethod == "mentioned" ]
+  then fetchIssuesWhereIAmMentioned
+else
+  echo invalid method name
+fi
