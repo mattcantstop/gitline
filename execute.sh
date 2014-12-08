@@ -11,7 +11,7 @@ function fetchIssuesWhereIAmAssignedWithLabel {
 }
 
 function fetchIssuesWhereIAmMentioned {
-  response=$(curl --silent https://api.github.com/search/issues?q=${user})
+  response=$(curl --silent ${DOMAIN}/search/issues?q=${user})
   echo "$response"
 }
 
