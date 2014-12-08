@@ -3,10 +3,10 @@
 A simple script that goes and fetches issues to which you are assigned
 or in which you have mentioned. As these are the two things (for me)
 that need immediate attention I thought it would be helpful to have them
-as a command line option. 
+as a command line option.  
 
 This script can search for either you (with your username) or for
-another GitHub user. The username value can be any valid username. 
+another GitHub user. The username value can be any valid username.  
 
 ## Motivations For Using This Repo
 
@@ -21,17 +21,20 @@ There are two different endpoints that you can make a request to. One
 where issues are assigned to you (filtered by bug type) or where you are
 mentioned. These are the ways to call either:
 
-*Where You Are Mentioned*
+**Where You Are Mentioned**  
 `sh execute.sh mentioned username` 
 
-*Where You Are Assigned (based on label type):*
+**Where You Are Assigned (based on label type):**  
 `sh execute.sh assigned username label_name`
+
+*Note: The "Assigned" type takes a third parameted (label_name) whereas
+the "Mentioned" type does not*
 
 This will dump out JSON into the terminal. Here you can quickly scan
 through issues to see where you should spend your time first.
 
 For instance, if I wanted to get a detailed view of what issues were
-assigned to me with the label of bug I could add this line to my `.bash_profile`:
+assigned to me with the label of bug I could add this line to my `.bash_profile`:  
 
 `alias=assigned_bugs'sh execute.sh assigned mattcantstop bug'
 
