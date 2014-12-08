@@ -1,18 +1,40 @@
 ## What Needs My Attention?
 
-This is a simple script that takes a keyword (usually a langugage) as an
-argument and processes through GitHub's repositories finding the most
-starred projects with the most open issues (it loosely uses popularity
-to organize them). 
+A simple script that goes and fetches issues to which you are assigned
+or in which you have mentioned. As these are the two things (for me)
+that need immediate attention I thought it would be helpful to have them
+as a command line option. 
+
+This script can search for either you (with your username) or for
+another GitHub user. The username value can be any valid username. 
 
 ## Motivations For Using This Repo
 
-I have wanted to contribute to an open source project on many occasions
-but have been unsure about where to go to contribute. This was a simple
-idea to immediately know what repos have the most need (by one far from
-perfect metric) based on the languages you know. 
+Most days I start my day on the command line and not in a GUI GitHub
+tool nor on GitHub.com. This script lets me search for things that need
+my attention where I usually am instead of having to go to do a
+different tool to check things. 
 
-To get started just enter this command replacing "language" with your
-language of choice:
+#### Getting Started:
 
-`sh where_to_contribute.sh langauge`
+There are two different endpoints that you can make a request to. One
+where issues are assigned to you (filtered by bug type) or where you are
+mentioned. These are the ways to call either:
+
+*Where You Are Mentioned*
+`sh execute.sh mentioned username` 
+
+*Where You Are Assigned (based on label type):*
+`sh execute.sh assigned username label_name`
+
+This will dump out JSON into the terminal. Here you can quickly scan
+through issues to see where you should spend your time first.
+
+For instance, if I wanted to get a detailed view of what issues were
+assigned to me with the label of bug I could add this line to my `.bash_profile`:
+
+`alias=assigned_bugs'sh execute.sh assigned mattcantstop bug'
+
+By typing "assigned_bugs" after you have restarted your terminal or sourced your bash_profile
+you would then received back in your terminal all issues that you are
+assigned to with a label of bug.
