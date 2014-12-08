@@ -36,7 +36,7 @@ through issues to see where you should spend your time first.
 For instance, if I wanted to get a detailed view of what issues were
 assigned to me with the label of bug I could add this line to my `.bash_profile`:  
 
-`alias=assigned_bugs'sh execute.sh assigned mattcantstop bug`
+`alias=assigned_bugs'sh ~/path/to/file/execute.sh assigned mattcantstop bug`
 
 By typing "assigned_bugs" after you have restarted your terminal or sourced your bash_profile
 you would then received back in your terminal all issues that you are
