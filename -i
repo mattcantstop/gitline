@@ -1,0 +1,75 @@
+== Info: Hostname was NOT found in DNS cache
+== Info:   Trying 192.30.252.138...
+== Info: Connected to api.github.com (192.30.252.138) port 443 (#0)
+== Info: TLS 1.2 connection using TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+== Info: Server certificate: *.github.com
+== Info: Server certificate: DigiCert SHA2 High Assurance Server CA
+== Info: Server certificate: DigiCert High Assurance EV Root CA
+== Info: Server auth using Basic with user '1aa2228a96efc2c01385ef6f902850a2c9018f72'
+=> Send header, 255 bytes (0xff)
+0000: POST /user/repos/ HTTP/1.1
+001c: Authorization: Basic MWFhMjIyOGE5NmVmYzJjMDEzODVlZjZmOTAyODUwYTJ
+005c: jOTAxOGY3Mjp4LW9hdXRoLWJhc2lj
+007b: User-Agent: curl/7.37.1
+0094: Host: api.github.com
+00aa: Accept: */*
+00b7: Content-Length: 137
+00cc: Content-Type: application/x-www-form-urlencoded
+00fd: 
+=> Send data, 137 bytes (0x89)
+0000: {"name":"git_commandline_testings","description":"testing_script
+0040: ","private":false,"has_issues":true,"has_wiki":true,"has_downloa
+0080: ds":true}
+== Info: upload completely sent off: 137 out of 137 bytes
+<= Recv header, 24 bytes (0x18)
+0000: HTTP/1.1 404 Not Found
+== Info: Server GitHub.com is not blacklisted
+<= Recv header, 20 bytes (0x14)
+0000: Server: GitHub.com
+<= Recv header, 37 bytes (0x25)
+0000: Date: Wed, 10 Dec 2014 17:58:19 GMT
+<= Recv header, 47 bytes (0x2f)
+0000: Content-Type: application/json; charset=utf-8
+<= Recv header, 23 bytes (0x17)
+0000: Status: 404 Not Found
+<= Recv header, 25 bytes (0x19)
+0000: X-RateLimit-Limit: 5000
+<= Recv header, 29 bytes (0x1d)
+0000: X-RateLimit-Remaining: 4991
+<= Recv header, 31 bytes (0x1f)
+0000: X-RateLimit-Reset: 1418234759
+<= Recv header, 34 bytes (0x22)
+0000: X-OAuth-Scopes: gist, repo, user
+<= Recv header, 31 bytes (0x1f)
+0000: X-Accepted-OAuth-Scopes: repo
+<= Recv header, 32 bytes (0x20)
+0000: X-GitHub-Media-Type: github.v3
+<= Recv header, 33 bytes (0x21)
+0000: X-XSS-Protection: 1; mode=block
+<= Recv header, 23 bytes (0x17)
+0000: X-Frame-Options: deny
+<= Recv header, 45 bytes (0x2d)
+0000: Content-Security-Policy: default-src 'none'
+<= Recv header, 20 bytes (0x14)
+0000: Content-Length: 87
+<= Recv header, 40 bytes (0x28)
+0000: Access-Control-Allow-Credentials: true
+<= Recv header, 176 bytes (0xb0)
+0000: Access-Control-Expose-Headers: ETag, Link, X-GitHub-OTP, X-RateL
+0040: imit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Sc
+0080: opes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+<= Recv header, 32 bytes (0x20)
+0000: Access-Control-Allow-Origin: *
+<= Recv header, 53 bytes (0x35)
+0000: X-GitHub-Request-Id: 614BB22A:5D10:4298DA7:548889BA
+<= Recv header, 73 bytes (0x49)
+0000: Strict-Transport-Security: max-age=31536000; includeSubdomains; 
+0040: preload
+<= Recv header, 33 bytes (0x21)
+0000: X-Content-Type-Options: nosniff
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 87 bytes (0x57)
+0000: {.  "message": "Not Found",.  "documentation_url": "https://deve
+0040: loper.github.com/v3".}.
+== Info: Connection #0 to host api.github.com left intact
