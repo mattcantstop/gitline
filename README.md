@@ -17,7 +17,7 @@ These are the different script endpoints that you can utilize (which connect wit
 |---|---|---|---|---|
 |Assigned Issues|"assigned"|username|label_name|NA|
 |My Notifications|"notifications"|username_of_repo_owner|repo_name|NA|
-|Comments On Repo Commits|"comments"|username_of_repo_owner|repo_name||
+|Comments On Repo Commits|"comments"|username_of_repo_owner|repo_name|NA|
 |Create A New Repo|"new_repo"|description_of_repo|created_repo_name|is_private (bool)|
 
 `Note:` All these bash commands start with the `sh execute.sh`
