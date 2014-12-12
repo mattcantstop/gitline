@@ -34,7 +34,7 @@ sh execute.sh assigned username label_name
 
 This endpoint will return to you all issues in which you are assigned. It
 searches this by label_name which can be one of the GitHub defaults or a
-custom one you have created. It also filters based only one ones that
+custom one you have created. It also filters based only on issues that
 have a status of open and sorts them by their creation date in ascending
 order.
 

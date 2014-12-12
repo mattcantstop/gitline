@@ -1,9 +1,9 @@
 DOMAIN="https://api.github.com"
-source .privateVariables.sh
+source ~/projects/github_bash_project/.privateVariables.sh
 
 # Assigning Arguments
 whichMethod=$1
-username=$2
+username="$2"
 label_state_or_repo_name=$3
 is_private=$4
 
@@ -23,8 +23,7 @@ function fetchRepoComments {
 }
 
 function createNewRepo {
-  body="{\"name\":\"${label_state_or_repo_name}\",\"description\":\"${username}\",\"private\":${is_private},\"has_issues\":true,\"has_wiki\":true,\"has_downloads\":false}"
-  echo ${new_body}
+  body="{\"name\":\"${label_state_or_repo_name}\",\"description\":\"$username\",\"private\":${is_private},\"has_issues\":true,\"has_wiki\":true,\"has_downloads\":false}"
   response=$(curl --silent -X POST -u ${TOKEN}:x-oauth-basic ${DOMAIN}/user/repos -d ${body})
   echo "$response"
 }
