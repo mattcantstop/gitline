@@ -1,3 +1,9 @@
+### January 2022 update: 
+
+I did this little challenge to get hired at GitHub as an Implementation Engineer in 2014. It was a little project to demonstrate at least remedial understanding of the GitHub API and the ability to operate on the command line, both of which were necessary for the role I was hired into. 
+
+GitHub has released the [GitHub CLI](https://cli.github.com) 🎉🎉🎉 which is infinitely better than this incredible remedial dump some curl calls. @nathos also was hired around the same time as me at GitHub. Check out his exercise that was goregous [GHInfo](https://github.com/nathos/ghinfo). 
+
 ## Interacting with GitHub.com
 
 I interact with GitHub often throughout the day. Many times I am on the
